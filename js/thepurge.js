@@ -24,9 +24,11 @@ function loadInstagramData( response ) {
 
     $( this ).html( text );
   });
-  $instagram.masonry({
-    itemSelector: '.well',
-    gutter: 30
+  $instagram.find('img').load(function() {
+    $instagram.masonry({
+      itemSelector: '.well',
+      gutter: 30
+    });
   });
 }
 
