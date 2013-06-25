@@ -4,7 +4,7 @@
 
 .post img {
   width: 242px;
-}
+nst}
 
 .post .caption {
   margin-top: 10px;
@@ -20,7 +20,7 @@
   margin-bottom: 10px;
 }
 
-#instagram, #instafeed, #twitter, #schedule {
+#about, #instagram, #instafeed, #twitter, #schedule {
   display: none;
 }
 

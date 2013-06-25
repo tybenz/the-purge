@@ -44,10 +44,8 @@ function init() {
     success: loadInstagramData
   });
 
-  $('.navbar a:not([data-toggle=collapse])').click( function( evt ) {
-    evt.preventDefault();
-
-    var id = $(this).attr('href');
+  $(window).on('hashchange',function() {
+    var id = window.location.toString().match(/(#.*)$/)[0];
     $('.section').hide();
     $(id).show();
     if ( id == '#instagram' && $(id).find('.posts').html() == '' ) {
