@@ -1,0 +1,21 @@
+<script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/bootstrap.min.js"></script>
+{% if page.title == 'Instagram' %}
+<script type="text/javascript" charset="utf-8" src="/js/masonry.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/mustache.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/instafeed.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/inst.js"></script>
+<script type="text/mustache" charset="utf-8" id="instagram-post-template">
+{{ page.mustacheSetDelimiter }}
+<div class="post well">
+  <div class="user">
+    <img src="[[ user.profile_picture ]]">
+    <span><a href="http://instagram.com/[[user.username]]">[[ user.username ]]</a></span>
+  </div>
+  <a href="[[link]]">
+    <img src="[[ images.standard_resolution.url ]]" alt="" />
+  </a>
+  <div class="caption">[[caption.text]]</div>
+</div>
+</script>
+{% endif %}

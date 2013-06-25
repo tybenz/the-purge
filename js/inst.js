@@ -1,7 +1,9 @@
 var instagramLoaded = false,
     twitterLoaded = false,
+    instagramData,
     $instagram,
-    instTemplate;
+    instTemplate,
+    $loading = $('#loading');
 
 function loadTwitterData( response ) {
   twitterLoaded = true;
@@ -9,11 +11,15 @@ function loadTwitterData( response ) {
 }
 
 function loadInstagramData( response ) {
+  $loading.hide();
   var data = response.data;
+  instagramData = data;
 
+  console.log(response);
   for ( var i = 0, length = data.length, pic; i < length; i++ ) {
     pic = data[i];
 
+    console.log(pic);
     $instagram.append( Mustache.render( instTemplate, pic ) );
 
   }

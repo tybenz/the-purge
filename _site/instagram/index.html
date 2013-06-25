@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Purge | Instagram</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" title="" type="text/css" />
+  <link rel="stylesheet" href="/css/bootstrap-responsive.css" title="" type="text/css" />
+  <link rel="stylesheet" href="/css/bootswatch.css" title="" type="text/css" />
+  <link rel="stylesheet" href="/css/thepurge.css" title="" type="text/css" />
+
+  <link rel="shortcut icon" href="img/favicon.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+     <div class="container">
+       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </a>
+       <a class="brand" href="/">The Purge</a>
+      <div class="nav-collapse collapse" id="main-menu">
+        <ul class="nav pull-right" id="main-menu-right">
+          <!-- <li><a href="#about">About</a></li> -->
+          <li><a href="/schedule">Schedule</a></li>
+          <li><a href="/instagram">Instagram</a></li>
+          <li><a href="/twitter">Twitter</a></li>
+        </ul>
+      </div>
+     </div>
+   </div>
+ </div>
+
+ <div id="instagram" class="section container" >
+    <div class="page-header">
+      <h1>Instagram</h1>
+    </div>
+    <p id="loading" class="lead">Loading...</p>
+
+    <!-- Headings & Paragraph Copy -->
+    <div class="posts"></div>
+</div>
+<div id="instafeed"></div>
+
+
+</body>
+<script type="text/javascript" charset="utf-8" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="/js/masonry.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/mustache.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/instafeed.js"></script>
+<script type="text/javascript" charset="utf-8" src="/js/inst.js"></script>
+<script type="text/mustache" charset="utf-8" id="instagram-post-template">
+{{=[[ ]]=}}
+<div class="post well">
+  <div class="user">
+    <img src="[[ user.profile_picture ]]">
+    <span><a href="http://instagram.com/[[user.username]]">[[ user.username ]]</a></span>
+  </div>
+  <a href="[[link]]">
+    <img src="[[ images.standard_resolution.url ]]" alt="" />
+  </a>
+  <div class="caption">[[caption.text]]</div>
+</div>
+</script>
+
+
+</html>

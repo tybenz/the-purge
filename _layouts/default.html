@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Purge | {{ page.title }}</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" title="" type="text/css" />
+  <link rel="stylesheet" href="/css/bootstrap-responsive.css" title="" type="text/css" />
+  <link rel="stylesheet" href="/css/bootswatch.css" title="" type="text/css" />
+  <link rel="stylesheet" href="/css/thepurge.css" title="" type="text/css" />
+
+  <link rel="shortcut icon" href="img/favicon.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+     <div class="container">
+       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </a>
+       <a class="brand" href="/">The Purge</a>
+      <div class="nav-collapse collapse" id="main-menu">
+        <ul class="nav pull-right" id="main-menu-right">
+          <!-- <li><a href="#about">About</a></li> -->
+          <li><a href="/schedule">Schedule</a></li>
+          <li><a href="/instagram">Instagram</a></li>
+          <li><a href="/twitter">Twitter</a></li>
+        </ul>
+      </div>
+     </div>
+   </div>
+ </div>
+
+ {{ content }}
+
+</body>
+{% include scripts.html %}
+</html>
