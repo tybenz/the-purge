@@ -1,0 +1,37 @@
+.post {
+  width: 329px;
+}
+
+.post img {
+  width: 331px;
+}
+
+.post .caption {
+  margin-top: 10px;
+}
+
+.post .user img {
+  width: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.post .user {
+  margin-bottom: 10px;
+}
+
+#instagram, #instafeed, #twitter, #schedule {
+  display: none;
+}
+
+.section {
+  margin-top: 70px;
+}
+
+#home {
+  text-align: center;
+}
+
+a {
+  color: #f22424;
+}
