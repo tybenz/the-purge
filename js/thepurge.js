@@ -33,10 +33,6 @@ function loadInstagramData( response ) {
 }
 
 function init() {
-  setTimeout(function () {
-    window.scrollTo(0, 1);
-  }, 1000);
-
   instTemplate = $( '#instagram-post-template' ).text();
   $instagram = $( '#instagram .posts' );
 
